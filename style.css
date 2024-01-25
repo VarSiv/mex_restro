@@ -1,13 +1,15 @@
 :root {
   --clr-primary-400: hsl(248, 88%, 3%);
   --clr-primary-100: hsl(249, 25%, 10%);
-  --clr-accent: hsl(0, 83%, 36%);
+  --clr-accent-bold: hsl(0, 83%, 36%);
+  --clr-accent-soft: hsl(0, 75%, 60%);
   --clr-white: hsl(0, 0%, 100%);
 
   --ff-heading: "Climate Crisis", sans-serif;
   --ff-body: "Poppins", sans-serif;
   --fw-regular: 400; /* note!! climate crisis is 400 only so use that for h1 */
   --fw-bold: 700;
+  --fw-semibold: 500;
 
   /* mobile font sizes*/
   --fs-300: 0.875rem;
@@ -106,3 +108,29 @@ svg {
 /* CSS RESET END */
 
 /* Utility classes */
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+.text-accent-400 {
+  color: var(--clr-accent-bold);
+}
+.text-white {
+  color: var(--clr-white);
+}
+
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+.bg-accent-400 {
+  background-color: var(--clr-accent-soft);
+}
+.bg-white {
+  background-color: var(--clr-white);
+}
+
+.fw-bold{ font-weight: var(--fw-bold); }
+.fw-semibold{ font-weight: var(--fw-semibold) }
+.fw-regular{ font-weight: var(--fw-regular) }
+.fs-primary-heading{ font-size: var(--fs-primary-heading) }
+.fs-secondary-heading{ font-size: var(--fs-secondary-heading) }
