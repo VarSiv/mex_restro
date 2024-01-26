@@ -4,10 +4,11 @@
   --clr-accent-bold: hsl(0, 83%, 36%);
   --clr-accent-soft: hsl(0, 75%, 60%);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
 
   --ff-heading: "Suez One", serif;
   --ff-body: "Poppins", sans-serif;
-  --fw-regular: 400; /* note!! climate crisis is 400 only so use that for h1 */
+  --fw-regular: 400; /* note!! suez one is 400 only so use that for h1 */
   --fw-bold: 700;
   --fw-semibold: 500;
 
@@ -19,7 +20,7 @@
   --fs-700: 2.75rem;
   --fs-body: var(--fs-400);
   --fs-nav: var(--fs-500);
-  --fs-button: var(--fs-400);
+  --fs-button: var(--fs-500);
   --fs-primary-heading: var(--fs-700);
   --fs-secondary-heading: var(--fs-600);
 
@@ -134,3 +135,69 @@ svg {
 .fw-regular{ font-weight: var(--fw-regular) }
 .fs-primary-heading{ font-size: var(--fs-primary-heading) }
 .fs-secondary-heading{ font-size: var(--fs-secondary-heading) }
+
+/*general styles*/
+.hero, .main-header, .footer {
+  background-color: var(--clr-black);
+}
+body {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+}
+.header1 {
+  color: var(--clr-white);
+  font-family: var(--ff-heading);
+  text-align: center;
+}
+.header2 {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semibold);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between; /* or space-around */
+  padding: 0 20px;
+}
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 100vmax;
+  padding: 1.25em 2.5em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-button);
+  line-height: 1;
+  color: var(--clr-white);
+  background-color: var(--clr-accent-bold);
+}
+.button:hover,
+.button:focus-visible {
+  background-color: var(--clr-accent-soft);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social {
+  width: 40px;
+  height: 40px;
+}
+.footer-text {
+  color: var(--clr-white);
+  font-size: var(--fs-300);
+  padding: 1rem 2rem;
+}
