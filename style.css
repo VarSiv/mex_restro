@@ -148,7 +148,8 @@ body {
 .header1 {
   color: var(--clr-white);
   font-family: var(--ff-heading);
-  text-align: center;
+  padding: 100px 20px 20px 0px;
+  
 }
 .header2 {
   font-size: var(--fs-600);
@@ -162,8 +163,20 @@ body {
 }
 .nav-list {
   display: flex;
-  justify-content: space-between; /* or space-around */
-  padding: 0 20px;
+  justify-content: space-between;
+}
+.nav-elem {
+  padding: 1rem;
+  color: var(--clr-white);
+}
+a:link, a:visited {
+  text-decoration:none;
+  color: var(--clr-white);
+}
+
+a:hover, a:active {
+  text-decoration:none;
+  color: var(--clr-accent-bold);
 }
 .button {
   cursor: pointer;
@@ -193,11 +206,29 @@ body {
   align-items: center;
 }
 .social {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: auto;
+  padding: 0.5rem;
 }
 .footer-text {
   color: var(--clr-white);
   font-size: var(--fs-300);
   padding: 1rem 2rem;
+}
+.hero-text {
+  position: relative;
+  z-index: 5;
+  padding-left: 80px;
+  padding-bottom: 120px;
+  align-content: center;
+}
+.button1 {
+  padding-left: 50px;
+}
+.main-image {
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  overflow: hidden;
 }
