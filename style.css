@@ -232,3 +232,29 @@ a:hover, a:active {
   left: 45%;
   overflow: hidden;
 }
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-page {
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+}
+.about-us-container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.about-us-image {
+  width: 80%;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.about-us-text {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  
+}
