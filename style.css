@@ -145,6 +145,9 @@ body {
   font-weight: var(--fw-regular);
   font-size: var(--fs-body);
 }
+section {
+  padding-bottom: 2rem;
+}
 .header1 {
   color: var(--clr-white);
   font-family: var(--ff-heading);
@@ -199,6 +202,7 @@ a:hover, a:active {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  padding-bottom: 0;
 }
 .footer-social {
   display: flex;
@@ -215,10 +219,13 @@ a:hover, a:active {
   font-size: var(--fs-300);
   padding: 1rem 2rem;
 }
+.hero-text, .contact, .about-us, .carousel, .menu {
+  padding-left: 80px;
+  padding-right: 80px;
+}
 .hero-text {
   position: relative;
   z-index: 5;
-  padding-left: 80px;
   padding-bottom: 120px;
   align-content: center;
 }
@@ -240,21 +247,33 @@ a:hover, a:active {
 .menu-page {
   width: 50%;
   height: auto;
-  padding: 1rem;
+}
+.menu1 {
+  padding-right: 10px;
+}
+.menu2 {
+  padding-left: 10px;
 }
 .about-us-container {
   display: grid;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
 
 }
 .about-us-image {
-  width: 80%;
+  width: 70%;
   grid-column-start: 1;
   grid-column-end: 1;
+  padding-right: 0;
 }
 .about-us-text {
   grid-column-start: 2;
   grid-column-end: 2;
-  
+}
+.disc {
+  color: var(--clr-white);
+  font-size: var(--fs-300);
+  padding-top: 0px;
+  padding-bottom: 20px;
+  text-align: center;
 }
