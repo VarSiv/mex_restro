@@ -18,16 +18,16 @@
       </div>
       <nav class = "primary-header">
         <ul role="list" class="nav-list">
-          <li class="nav-elem"><a href="#">Home</a></li>
-          <li class="nav-elem"><a href="#">Menu</a></li>
-          <li class="nav-elem"><a href="#">About Us</a></li>
-          <li class="nav-elem"><a href="#">Contact</a></li>
+          <li class="nav-elem"><a href="#home">Home</a></li>
+          <li class="nav-elem"><a href="#menu">Menu</a></li>
+          <li class="nav-elem"><a href="#about-us">About Us</a></li>
+          <li class="nav-elem"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="landing">
+      <section class="landing" id="home">
         
           <div class="hero">
             <div class="hero-text">
@@ -47,7 +47,7 @@
         <button class="button">Order Now</button>
       </section>
 
-      <section class="menu">
+      <section class="menu" id="menu">
         <div class="menu-container">
           <div class="menu-page menu1">
             <img src="images/menu1.png" alt="Menu page 1">
@@ -58,7 +58,7 @@
         </div>
       </section>
 
-      <section class="about-us">
+      <section class="about-us" id="about-us">
           <h2 class="header2">About Us</h2>
           <div class="about-us-container">
 
@@ -78,13 +78,13 @@
 
       </section>
 
-      <section class="contact">
-        <h2 class="header2">Contact Us</h2>
+      <section class="contact" id="contact">
+        <h2 class="header2">Contact</h2>
         <div class="contact-container">
           <div class="contact-text">
             <p>Phone: 555-555-5555</p>
-            <p>Email:</p>
-            <p>Address:</p>
+            <p>Email: webdevelopment.blue@gmail.com</p>
+            <p>Address: Lorem Ipsum 1089</p>
           </div>
           <div class="contact-form">
             <form>
@@ -93,8 +93,8 @@
               <label for="email">Email:</label>
               <input type="text" id="email" name="email" placeholder="Your email..">
               <label for="message">Message:</label>
-              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-              <input type="submit" value="Submit" class="button">
+              <textarea rows=1 cols=50 id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              <div class="submit-button"><input type="submit" value="Submit" class="button submit"></div>
             </form>
           </div>
         </div>

@@ -277,3 +277,20 @@ a:hover, a:active {
   padding-bottom: 20px;
   text-align: center;
 }
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+}
+textarea {
+  resize: none;
+  max-height: 75px;
+}
